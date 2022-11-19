@@ -1,3 +1,8 @@
+html {
+    font-family: "Roboto";
+    color: #444444;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -47,17 +52,21 @@ a img {
     background-color: lightgray;
 }
 
-.banner img {
-    width: 60%;
-    height: auto;
+.left-banner {
     padding: 32px 24px;
+    width: 60%;
+}
+
+.left-banner img {
+    width: 100%;
 }
 
 .right-banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 0 0 24px;
+    width: 40%;
+    padding: 16px 24px;
 }
 
 h1 {
@@ -71,11 +80,124 @@ button {
     width: 400px;
     font-size: 20px;
     margin-top: 20px;
-    background-color: #555555;
+    background-color: #444444;
     color: white;
     border: none;
 }
 
 h2 {
     font-size: 30px;
+}
+
+.events {
+    display: flex;
+    background-color: #eee;
+}
+
+.left-events {
+    padding: 32px 24px;
+    width: 60%;
+}
+
+.left-events img {
+    width: 100%
+}
+
+.left-events h3 {
+    font-weight: 100;
+}
+
+.right-events {
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.right-events a {
+    text-decoration: none;
+}
+
+.event img {
+    width: 35%;
+    height: auto;
+    margin: 16px;
+}
+
+.event {
+    display: flex;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.summary * {
+    margin: 8px 0;
+}
+
+.majors {
+    text-align: center;
+    padding: 32px 40px;
+    background-color: lightgray;
+}
+
+.majors h2 {
+    margin: 0;
+}
+
+.first-line {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.second-line {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.major-section {
+    width: 30%;
+    margin: 32px 16px;
+    background-color: white;
+    text-align: left;
+}
+
+.major-section img{
+    width: 100%;
+    height: auto;
+}
+
+.major-section h3 {
+    margin: 16px 16px 8px 16px;
+}
+
+.major-section p {
+    margin: 24px 16px;
+}
+
+.capital {
+    text-transform: uppercase;
+    margin: 8px 16px;
+}
+
+.thesis {
+    display: flex;
+    width: 100%;
+}
+
+.left-thesis {
+    width: 60%;
+}
+
+.left-thesis video {
+    width: 100%;
+}
+
+.right-thesis {
+    width: 40%;
 }
