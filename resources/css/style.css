@@ -9,7 +9,7 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-header {
+.desktop {
     display: flex;
     justify-content: space-between;
     margin-right: 24px;
@@ -43,7 +43,7 @@ nav a {
     font-size: 18px;
 }
 
-a img {
+.mobile {
     display: none;
 }
 
@@ -118,13 +118,13 @@ h2 {
     text-decoration: none;
 }
 
-.event img {
+.thesis-section img, .event img {
     width: 35%;
     height: auto;
     margin: 16px;
 }
 
-.event {
+.thesis-section, .event {
     display: flex;
 }
 
@@ -186,12 +186,25 @@ h2 {
 }
 
 .thesis {
-    display: flex;
     width: 100%;
+    text-align: center;
+    background-color: #eee;
+    border-bottom: solid 1px lightgray;
+}
+
+.thesis h2 {
+    padding: 32px 0;
+    margin: 0;
+}
+
+.thesis-flex {
+    display: flex;
 }
 
 .left-thesis {
     width: 60%;
+    padding: 24px;
+    text-align: left;
 }
 
 .left-thesis video {
@@ -200,4 +213,113 @@ h2 {
 
 .right-thesis {
     width: 40%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #eee;
+}
+
+.privacy {
+    display: flex;
+}
+
+.privacy a {
+    text-decoration: none;
+    color:#444444;
+    margin: 0 16px;
+}
+
+@media only screen and (max-width: 768px) {
+
+.desktop, .right-thesis, .left-thesis h2, .left-thesis h3, .privacy {
+    display: none;
+}
+
+.mobile {
+    display: unset;
+}
+
+header .mobile {
+    display: flex;
+    justify-content: space-evenly;
+    height: 64px;
+}
+
+a img {
+    height: 100%;
+    width: auto;
+}
+
+.left-thesis, .thesis-flex, .events, .event, .banner, .first-line, .second-line {
+    display: block;
+    width: 100%;
+}
+
+.right-banner, .left-banner {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.left-banner img {
+    width: 100%;
+    height: auto;
+    margin: 0 0 16px 0;
+    padding: 0;
+}
+
+button, h1, h2 {
+    margin: 16px 16px;
+}
+
+button {
+    margin: 8px auto 16px auto;
+    width: 90%;
+}
+
+.left-events {
+    display: none;
+}
+
+.right-events, .majors {
+    width: 90%;
+    padding: 16px;
+    background-color: #eee;
+}
+
+.right-events img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.summary {
+    margin: 16px;
+}
+
+.major-section {
+    display: block;
+    width: 100%;
+    margin: 0;
+    background-color: #eee;
+}
+
+.major-section img, .major-section p {
+    display: none;
+}
+
+.major-section h3 {
+    width: 90%;
+    padding: 16px 16px 24px 16px;
+    margin: 8px 16px;
+    background-color: lightgray;
+}
+
+.left-thesis {
+    padding: 0;
+}
+
 }

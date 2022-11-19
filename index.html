@@ -6,16 +6,24 @@
     </head>
     <body>
         <header>
-            <div class="logo">
-                <img src="./resources/images/ic-logo.svg" alt="Colmar logo">
-                <p><strong>COLMAR</strong>ACADEMY</p>
+            <div class="desktop">
+                <div class="logo">
+                    <img src="./resources/images/ic-logo.svg" alt="Colmar logo">
+                    <p><strong>COLMAR</strong>ACADEMY</p>
+                </div>
+                <nav>
+                    <a href="#"><p>Campus</p></a>
+                    <a href="#"><p>Online</p></a>
+                    <a href="#"><p>For companies</p></a>
+                    <a href="#"><p>Sign in</p></a>
+                </nav>
             </div>
-            <nav>
-                <a href="#"><img src="./resources/images/ic-on-campus.svg" alt="link to campus" ><p>Campus</p></a>
-                <a href="#"><img src="./resources/images/ic-online.svg" alt="link to online" ><p>Online</p></a>
-                <a href="#"><p>For companies</p></a>
-                <a href="#"><img src="./resources/images/ic-login.svg" alt="link to sign in"><p>Sign in</p></a>
-            </nav>
+            <div class="mobile">
+                <img src="./resources/images/ic-logo.svg" alt="Colmar logo">
+                <a href="#"><img src="./resources/images/ic-on-campus.svg" alt="link to campus" ></a>
+                <a href="#"><img src="./resources/images/ic-online.svg" alt="link to online" ></a>
+                <a href="#"><img src="./resources/images/ic-login.svg" alt="link to sign in"></a>
+            </div>
         </header>
         <div class="banner">
             <div class="left-banner">
@@ -36,7 +44,8 @@
             </div>
             <div class="right-events">
                 <div class="event">
-                    <img src="./resources/images/information-orientation.jpg" alt="Orientation">
+                    <img class="desktop" src="./resources/images/information-orientation.jpg" alt="Orientation">
+                    <img class="mobile" src="./resources/images/information-orientation-mobile.jpg" alt="Orientation">
                     <div class="summary">
                         <h2>Orientation date</h2>
                         <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
@@ -44,7 +53,8 @@
                     </div>
                 </div>
                 <div class="event">
-                    <img src="./resources/images/information-campus.jpg" alt="Colmar Campus">
+                    <img class="desktop" src="./resources/images/information-campus.jpg" alt="Colmar Campus">
+                    <img class="mobile" src="./resources/images/information-campus-mobile.jpg" alt="Colmar Campus">
                     <div class="summary">
                         <h2>Our campus</h2>
                         <p>Find which campus is close by you</p>
@@ -52,7 +62,8 @@
                     </div>                 
                 </div>
                 <div class="event">
-                    <img src="./resources/images/information-guest-lecture.jpg" alt="Oliver Sack">
+                    <img class="desktop" src="./resources/images/information-guest-lecture.jpg" alt="Oliver Sack">
+                    <img class="mobile" src="./resources/images/information-guest-lecture-mobile.jpg" alt="Oliver Sack">
                     <div class="summary">
                         <h2>Our guest lecture</h2>
                         <p>Join a keynote with Oliver Sack about music in medical treatment</p>
@@ -106,24 +117,26 @@
         </div>
         <div class="thesis">
             <h2>Thesis exhibit</h2>
-            <div class="left-thesis">
-                <video src="./resources/videos/thesis.mp4">Video Not Supported</video>
-                <h2>Reimagine urban</h2>
-                <h3>"Curabitur vitae libero in ipusm porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</h3>
-            </div>
-            <div class="right-thesis">
-                <div class="thesis-section">
-                    <img src="./resources/images/thesis-fisma.jpg">
-                    <div class="summary">
-                        <h2>Fisma: Design and Prototype</h2>
-                        <p>Designer showcase of new prototype product</p>
-                    </div>
+            <div class="thesis-flex">
+                <div class="left-thesis">
+                    <video src="./resources/videos/thesis.mp4" controls>Video Not Supported</video>
+                    <h2>Reimagine urban</h2>
+                    <h3>"Curabitur vitae libero in ipusm porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</h3>
                 </div>
-                <div class="thesis-section">
-                    <img src="./resources/images/thesis-now-and-then.jpg">
-                    <div class="summary">
-                        <h2>Now and then</h2>
-                        <p>Research study about New York</p>
+                <div class="right-thesis">
+                    <div class="thesis-section">
+                        <img src="./resources/images/thesis-fisma.jpg">
+                        <div class="summary">
+                            <h2>Fisma: Design and Prototype</h2>
+                            <p>Designer showcase of new prototype product</p>
+                        </div>
+                    </div>
+                    <div class="thesis-section">
+                        <img src="./resources/images/thesis-now-and-then.jpg">
+                        <div class="summary">
+                            <h2>Now and then</h2>
+                            <p>Research study about New York</p>
+                        </div>
                     </div>
                 </div>
             </div>
